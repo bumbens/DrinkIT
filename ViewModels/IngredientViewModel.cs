@@ -1,12 +1,14 @@
 using DrinkIT.Models;
 using DrinkIT.Services;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace DrinkIT.ViewModels;
 
-public class IngredientViewModel(DatabaseService dbService, DrinkService drinkService)
+public class IngredientViewModel(DatabaseService dbService, DrinkService drinkService) : INotifyPropertyChanged
 {
     private DatabaseService _dbService = dbService;
+    public event PropertyChangedEventHandler? PropertyChanged;
 
     public ObservableCollection<Ingredient> Ingredients
     {
@@ -37,6 +39,7 @@ public class IngredientViewModel(DatabaseService dbService, DrinkService drinkSe
     public void FilterIngredients(string query)
     {
         FilteredIngredients.Clear();
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSearching)));
         if (string.IsNullOrEmpty(query)) return;
         foreach (var item in IngredientsAPI)
         {
@@ -45,6 +48,7 @@ public class IngredientViewModel(DatabaseService dbService, DrinkService drinkSe
                 FilteredIngredients.Add(item);
             }
         }
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSearching)));
 
     }
     public async Task AddIngredient(Ingredient ingredient)
@@ -74,5 +78,7 @@ public class IngredientViewModel(DatabaseService dbService, DrinkService drinkSe
             Ingredients.Add(item);
         }
     }
+
+    public bool IsSearching => FilteredIngredients.Count > 0;
 }
 

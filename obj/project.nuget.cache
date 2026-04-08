@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ifyugV5MyO4=",
+  "dgSpecHash": "Kq3uTN1Gxoc=",
   "success": true,
-  "projectFilePath": "/Users/filipbeben/Csharp/DrinkIT/DrinkIT.csproj",
+  "projectFilePath": "/Users/filipbeben/Projects/DrinkIT/DrinkIT.csproj",
   "expectedPackageFiles": [
     "/Users/filipbeben/.nuget/packages/googlegson/2.13.1.1/googlegson.2.13.1.1.nupkg.sha512",
     "/Users/filipbeben/.nuget/packages/microsoft.extensions.configuration/10.0.0/microsoft.extensions.configuration.10.0.0.nupkg.sha512",

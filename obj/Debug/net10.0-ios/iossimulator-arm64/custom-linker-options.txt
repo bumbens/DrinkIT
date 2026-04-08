@@ -5,7 +5,7 @@ AreAnyAssembliesTrimmed=false
 				AOTOutputDirectory=obj/Debug/net10.0-ios/iossimulator-arm64/nativelibraries/aot-output/
 				DedupAssembly=
 				AppBundleManifestPath=bin/Debug/net10.0-ios/iossimulator-arm64/DrinkIT.app/Info.plist
-				CacheDirectory=/Users/filipbeben/Csharp/DrinkIT/obj/Debug/net10.0-ios/iossimulator-arm64/linker-cache
+				CacheDirectory=/Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-ios/iossimulator-arm64/linker-cache
 				
 				Debug=true
 				DeploymentTarget=15.0
@@ -188,7 +188,7 @@ FrameworkAssembly=System.Private.CoreLib
 				IntermediateLinkDir=obj/Debug/net10.0-ios/iossimulator-arm64/linked/
 				InvariantGlobalization=false
 				HybridGlobalization=true
-				ItemsDirectory=/Users/filipbeben/Csharp/DrinkIT/obj/Debug/net10.0-ios/iossimulator-arm64/linker-items
+				ItemsDirectory=/Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-ios/iossimulator-arm64/linker-items
 				IsAppExtension=false
 				IsSimulatorBuild=True
 				LibMonoLinkMode=dylib

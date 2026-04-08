@@ -3,9 +3,10 @@
     x:Class="DrinkIT.Views.IngredientsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="DrinkIT">
+    Title="DrinkIT Beta">
+    
     <Grid>
-        <StackLayout Padding="16" VerticalOptions="Fill">
+        <VerticalStackLayout Padding="16" VerticalOptions="Fill">
             <SearchBar
                 x:Name="IngredientEntry"
                 Placeholder="Name of an ingredient"
@@ -13,11 +14,18 @@
             <Button
                 Margin="0,8,0,0"
                 Clicked="OnFindClicked"
-                Text="Find" />
+                Text="Find" 
+                BackgroundColor = "#1E3A5F"/>
             <Button
                 Margin="0,8,0,0"
                 Clicked="OnClearAllClicked"
-                Text="Delete all ingredients" />
+                Text="Delete all ingredients" 
+                BackgroundColor = "#1E3A5F"/>
+            <Button
+                Margin="0,8,0,0"
+
+                Text="Go to recipes" 
+                BackgroundColor = "#1E3A5F"/>
             <Label
                 Margin="16,16,32,32"
                 FontAttributes="Bold"
@@ -28,7 +36,9 @@
             <CollectionView
                 ItemsSource="{Binding Ingredients}"
                 SelectionChanged="OnIngredientSelected"
-                SelectionMode="Single">
+                SelectionMode="Single"
+                VerticalOptions="FillAndExpand"
+                MaximumHeightRequest="400">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Spacing="0">
@@ -41,11 +51,15 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </StackLayout>
+        </VerticalStackLayout>
 
+        <BoxView
+            BackgroundColor="Black"
+            Opacity="0.5"
+            IsVisible="{Binding IsSearching}"
+            VerticalOptions="FillAndExpand" />
         <CollectionView
             x:Name="SuggestionsDropdown"
-            BackgroundColor="White"
             ItemsSource="{Binding FilteredIngredients}"
             MaximumHeightRequest="200"
             SelectionChanged="OnAvailableIngredientSelected"
@@ -59,15 +73,16 @@
             </CollectionView.Margin>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Spacing="0">
+                    <StackLayout Spacing= "0" BackgroundColor="White">
                         <Label Padding="8" Text="{Binding StrIngredient1}" />
-                        <BoxView
+                        <!-- <BoxView
                             BackgroundColor="LightGray"
                             HeightRequest="1"
-                            HorizontalOptions="Fill" />
+                            HorizontalOptions="Fill" /> -->
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
     </Grid>
+    
 </ContentPage>

@@ -21918,11 +21918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/filipbeben/Csharp/DrinkIT/DrinkIT.csproj",
+      "projectUniqueName": "/Users/filipbeben/Projects/DrinkIT/DrinkIT.csproj",
       "projectName": "DrinkIT",
-      "projectPath": "/Users/filipbeben/Csharp/DrinkIT/DrinkIT.csproj",
+      "projectPath": "/Users/filipbeben/Projects/DrinkIT/DrinkIT.csproj",
       "packagesPath": "/Users/filipbeben/.nuget/packages/",
-      "outputPath": "/Users/filipbeben/Csharp/DrinkIT/obj/",
+      "outputPath": "/Users/filipbeben/Projects/DrinkIT/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
