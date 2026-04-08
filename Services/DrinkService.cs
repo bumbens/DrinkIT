@@ -41,6 +41,14 @@ public class DrinkService
         return result?.Drinks;
     }
 
+    public async Task<List<ListOfDrinks>?> GetDrinksByFirstLetterAsync(string letter)
+    {
+        var url = $"https://www.thecocktaildb.com/api/json/v1/1/search.php?f={letter}";
+        var response = await _httpClient.GetStringAsync(url);
+        var result = JsonSerializer.Deserialize<ListOfDrinksResponse>(response, _jsonOptions);
+        return result?.Drinks;
+    }
+
     public async Task<List<Drink>?> GetDrinksByIngredientsAsync(List<Ingredient> ingredients)
     {
         List<List<Drink>> allDrinks = [];

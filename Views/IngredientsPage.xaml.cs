@@ -19,6 +19,11 @@ public partial class IngredientsPage : ContentPage
         await Navigation.PushAsync(new DrinksPage());
     }
 
+    private async void OnAllDrinksClicked(object? sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new AllDrinksPage());
+    }
+
     private async void OnClearAllClicked(object? sender, EventArgs e)
     {
         if (BindingContext is not IngredientViewModel viewModel) return;

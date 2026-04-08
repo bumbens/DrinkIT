@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  x:Class="DrinkIT.Views.AllDrinksPage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+  <Grid Padding="16">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    
+    <Picker Grid.Row="0"
+            x:Name="LetterPicker"
+            Title="Select letter"
+            SelectedIndexChanged="OnLetterSelected" />
+            
+    <CollectionView Grid.Row="1"
+        ItemsSource="{Binding AllDrinks}"
+        SelectionChanged="OnDrinkSelected"
+        SelectionMode="Single">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Label Padding="8" Text="{Binding StrDrink}" />
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</Grid>
+</ContentPage>

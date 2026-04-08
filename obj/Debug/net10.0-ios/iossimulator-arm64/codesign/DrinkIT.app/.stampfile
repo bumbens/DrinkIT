@@ -1,1 +1,0 @@
--v --force --timestamp=none --sign - --entitlements /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-ios/iossimulator-arm64/Entitlements.xcent /Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-ios/iossimulator-arm64/DrinkIT.app

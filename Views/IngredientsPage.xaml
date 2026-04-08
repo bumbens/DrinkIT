@@ -23,8 +23,8 @@
                 BackgroundColor = "#1E3A5F"/>
             <Button
                 Margin="0,8,0,0"
-
-                Text="Go to recipes" 
+                Clicked="OnAllDrinksClicked"
+                Text="Go to all recipes" 
                 BackgroundColor = "#1E3A5F"/>
             <Label
                 Margin="16,16,32,32"
@@ -75,10 +75,10 @@
                 <DataTemplate>
                     <StackLayout Spacing= "0" BackgroundColor="White">
                         <Label Padding="8" Text="{Binding StrIngredient1}" />
-                        <!-- <BoxView
+                        <BoxView
                             BackgroundColor="LightGray"
                             HeightRequest="1"
-                            HorizontalOptions="Fill" /> -->
+                            HorizontalOptions="Fill" />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

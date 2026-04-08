@@ -76,6 +76,16 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
+[/Users/filipbeben/Projects/DrinkIT/Views/AllDrinksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DrinkIT.Views.AllDrinksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AllDrinksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AllDrinksPage.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
 [/Users/filipbeben/Projects/DrinkIT/Views/DrinkDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DrinkIT.Views.DrinkDetailPage.xaml
