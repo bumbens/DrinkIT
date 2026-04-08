@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DrinkIT.Views.IngredientsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="DrinkIT">
+    <Grid>
+        <StackLayout Padding="16" VerticalOptions="Fill">
+            <SearchBar
+                x:Name="IngredientEntry"
+                Placeholder="Name of an ingredient"
+                TextChanged="OnSearchTextChanged" />
+            <Button
+                Margin="0,8,0,0"
+                Clicked="OnFindClicked"
+                Text="Find" />
+            <Button
+                Margin="0,8,0,0"
+                Clicked="OnClearAllClicked"
+                Text="Delete all ingredients" />
+            <Label
+                Margin="16,16,32,32"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Text="Your ingredients"
+                VerticalOptions="Start" />
+            <CollectionView
+                ItemsSource="{Binding Ingredients}"
+                SelectionChanged="OnIngredientSelected"
+                SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Spacing="0">
+                            <Label Padding="8" Text="{Binding Name}" />
+                            <BoxView
+                                Margin="0,0,0,8"
+                                BackgroundColor="LightGray"
+                                HeightRequest="1" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+
+        <CollectionView
+            x:Name="SuggestionsDropdown"
+            BackgroundColor="White"
+            ItemsSource="{Binding FilteredIngredients}"
+            MaximumHeightRequest="200"
+            SelectionChanged="OnAvailableIngredientSelected"
+            SelectionMode="Single"
+            VerticalOptions="Start">
+            <CollectionView.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="Android" Value="16,60,16,0" />
+                    <On Platform="iOS" Value="16,100,16,0" />
+                </OnPlatform>
+            </CollectionView.Margin>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Spacing="0">
+                        <Label Padding="8" Text="{Binding StrIngredient1}" />
+                        <BoxView
+                            BackgroundColor="LightGray"
+                            HeightRequest="1"
+                            HorizontalOptions="Fill" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

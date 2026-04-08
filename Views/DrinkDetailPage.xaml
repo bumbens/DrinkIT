@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DrinkIT.Views.DrinkDetailPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid Padding="16">
+    <ActivityIndicator 
+        IsRunning="{Binding IsImgLoading}"
+        IsVisible="{Binding IsImgLoading}"
+        Color="Gray" 
+        VerticalOptions="Center"
+        HorizontalOptions="Center" />
+
+    <VerticalStackLayout IsVisible="{Binding IsImgLoaded}">
+        <Label Padding="8" Text="{Binding DrinkDetails.StrDrink}" />
+        
+        <Grid HeightRequest="200" WidthRequest="200">
+            <Image
+                HeightRequest="200"
+                Source="{Binding DrinkImage}"
+                Aspect="AspectFill"
+                WidthRequest="200" />
+            <ActivityIndicator 
+                IsRunning="{Binding IsImgLoading}"
+                IsVisible="{Binding IsImgLoading}"
+                Color="Gray" 
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+        </Grid>
+
+        <Label Padding="8" FontAttributes="Bold" Text="Ingredients:" />
+        <CollectionView ItemsSource="{Binding Ingredients}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="4" Orientation="Horizontal">
+                        <Label FontAttributes="Bold" Text="{Binding Name}" />
+                        <Label Margin="8,0,0,0" Text="{Binding Measure}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Label Padding="8" Text="{Binding DrinkDetails.StrInstructions}" />
+    </VerticalStackLayout>
+</Grid>
+</ContentPage>

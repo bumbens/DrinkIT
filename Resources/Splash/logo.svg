@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+  <!-- Straw -->
+  <path d="M650 230 L735 150" stroke="#FFFFFF" stroke-width="48" stroke-linecap="round"></path>
+
+  <!-- Glass outline -->
+  <path d="M320 280 H704 L635 730 Q625 800 512 800 Q399 800 389 730 Z" fill="none" stroke="#FFFFFF" stroke-width="48" stroke-linejoin="round"></path>
+
+  <!-- Liquid -->
+  <path d="M380 460 H644 L602 710 Q596 750 512 750 Q428 750 422 710 Z" fill="#38BDF8" opacity="0.9"></path>
+
+  <!-- Small bubbles -->
+  <circle cx="460" cy="540" r="18" fill="#E0F2FE" opacity="0.8"></circle>
+  <circle cx="520" cy="610" r="14" fill="#E0F2FE" opacity="0.7"></circle>
+  <circle cx="570" cy="520" r="12" fill="#E0F2FE" opacity="0.7"></circle>
+
+</svg>
