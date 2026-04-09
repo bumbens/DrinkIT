@@ -83,7 +83,7 @@
 0x556e8b63b660ab8b di:110 mi:110 do:5416814 ds:10218 ddo:0 dds:0 cdo:0 cds:0 Xamarin.AndroidX.Lifecycle.Common.Jvm.dll
 0x5588627c9a108ec9 di:2 mi:2 do:34521 ds:5838 ddo:0 dds:0 cdo:0 cds:0 System.Collections.Specialized
 0x571c5cfbec5ae8e2 di:23 mi:23 do:546592 ds:41347 ddo:0 dds:0 cdo:0 cds:0 System.Private.Uri
-0x574586761fd39ef5 di:128 mi:128 do:5946741 ds:56857 ddo:0 dds:0 cdo:0 cds:0 DrinkIT
+0x574586761fd39ef5 di:128 mi:128 do:5946741 ds:59032 ddo:0 dds:0 cdo:0 cds:0 DrinkIT
 0x579a06fed6eec900 di:39 mi:39 do:1239703 ds:936176 ddo:0 dds:0 cdo:0 cds:0 System.Private.CoreLib.dll
 0x57adda3c951abb33 di:84 mi:84 do:3290169 ds:3003 ddo:0 dds:0 cdo:0 cds:0 Microsoft.Extensions.Hosting.Abstractions.dll
 0x57c542c14049b66d di:8 mi:8 do:122209 ds:24760 ddo:0 dds:0 cdo:0 cds:0 System.Diagnostics.DiagnosticSource
@@ -105,7 +105,7 @@
 0x65ecac39144dd3cc di:89 mi:89 do:3331846 ds:880395 ddo:0 dds:0 cdo:0 cds:0 Microsoft.Maui.Controls.dll
 0x66d13304ce1a3efa di:106 mi:106 do:5318257 ds:11342 ddo:0 dds:0 cdo:0 cds:0 Xamarin.AndroidX.CursorAdapter
 0x6872ec7a2e36b1ac di:9 mi:9 do:146969 ds:6347 ddo:0 dds:0 cdo:0 cds:0 System.Drawing.Primitives.dll
-0x68cd99d810c607cd di:128 mi:128 do:5946741 ds:56857 ddo:0 dds:0 cdo:0 cds:0 DrinkIT.dll
+0x68cd99d810c607cd di:128 mi:128 do:5946741 ds:59032 ddo:0 dds:0 cdo:0 cds:0 DrinkIT.dll
 0x68fbbbe2eb455198 di:11 mi:11 do:155682 ds:33207 ddo:0 dds:0 cdo:0 cds:0 System.Formats.Asn1
 0x69063fc0ba8e6bdd di:52 mi:52 do:2975111 ds:9999 ddo:0 dds:0 cdo:0 cds:0 he/Microsoft.Maui.Controls.resources.dll
 0x699dffb2427a2d71 di:97 mi:97 do:4919029 ds:2630 ddo:0 dds:0 cdo:0 cds:0 SQLitePCLRaw.lib.e_sqlite3.android.dll

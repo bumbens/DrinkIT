@@ -1,3 +1,11 @@
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/DrinkIT.runtimeconfig.json
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/DrinkIT.dll
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/DrinkIT.pdb
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit.apk
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit.aab
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit-Signed.aab
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit-Signed.apk
+/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit-Signed.apk.idsig
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/build.props
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/adb.props
@@ -118,14 +126,6 @@
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/DrinkIT.AssemblyInfo.cs
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/DrinkIT.csproj.CoreCompileInputs.cache
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/DrinkIT.sourcelink.json
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/DrinkIT.runtimeconfig.json
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/DrinkIT.dll
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/DrinkIT.pdb
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit.apk
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit.aab
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit-Signed.aab
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit-Signed.apk
-/Users/filipbeben/Projects/DrinkIT/bin/Debug/net10.0-android/com.companyname.drinkit-Signed.apk.idsig
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/XamlC.stamp
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/DrinkIT.dll
 /Users/filipbeben/Projects/DrinkIT/obj/Debug/net10.0-android/DrinkIT.pdb

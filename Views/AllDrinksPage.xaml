@@ -53,10 +53,7 @@
                     Margin="0,8,0,0"
                     Clicked="OnFilterNonAlcoholicClicked"
                     BackgroundColor = "#1E3A5F"/>
-            <Button Text="Close" 
-                    Clicked="OnHideFilterClicked" 
-                    Margin="0,8,0,0"
-                    BackgroundColor = "#1E3A5F"/>
+
         </VerticalStackLayout>
     </Grid>
   </Grid>

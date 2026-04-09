@@ -23,19 +23,14 @@ public partial class AllDrinksPage : ContentPage
             viewModel.IsFilterVisible = true;
         }
     }
-    private async void OnHideFilterClicked(object sender, EventArgs e)
-    {
-        if (BindingContext is ListOfDrinksViewModel viewModel)
-        {
-            viewModel.IsFilterVisible = false;
-        }
-    }
+    
     private async void OnAllClicked(object sender, EventArgs e)
     {
         if (BindingContext is ListOfDrinksViewModel viewModel)
         {
             viewModel.AlcoholicStatusFilter = "All";
             viewModel.ApplyAlcoholicFilter();
+            viewModel.IsFilterVisible = false;
         }
     }
     private async void OnFilterAlcoholicClicked(object sender, EventArgs e)
@@ -44,6 +39,7 @@ public partial class AllDrinksPage : ContentPage
         {
             viewModel.AlcoholicStatusFilter = "Alcoholic";
             viewModel.ApplyAlcoholicFilter();
+            viewModel.IsFilterVisible = false;
         }
     }
     private async void OnFilterNonAlcoholicClicked(object sender, EventArgs e)
@@ -52,6 +48,7 @@ public partial class AllDrinksPage : ContentPage
         {
             viewModel.AlcoholicStatusFilter = "Non-alcoholic";
             viewModel.ApplyAlcoholicFilter();
+            viewModel.IsFilterVisible = false;
         }
     }
     protected override async void OnAppearing()
