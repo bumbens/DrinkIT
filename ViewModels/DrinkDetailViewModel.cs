@@ -28,7 +28,10 @@ public class DrinkDetailViewModel(DrinkService drinkService) : INotifyPropertyCh
             _drinkDetails = value;
             PropertyChangedEventArgs args = new(nameof(DrinkDetails));
 
-            if (PropertyChanged != null) PropertyChanged.Invoke(this, args);
+            if (PropertyChanged != null) {
+                PropertyChanged.Invoke(this, args);
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(IsAlcoholicStatus)));
+            }
         }
     }
 
@@ -85,6 +88,26 @@ public class DrinkDetailViewModel(DrinkService drinkService) : INotifyPropertyCh
         {
             _drinkImage = value;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DrinkImage)));
+        }
+    }
+
+    public bool? IsAlcoholic
+    {
+        get
+        {
+            if (DrinkDetails?.StrAlcoholic == null) return null;
+            return DrinkDetails.StrAlcoholic.ToLower().Contains("alcoholic");
+        }
+    }
+
+    public string IsAlcoholicStatus
+    {
+        get
+        {
+            if (DrinkDetails?.StrAlcoholic == null) return "Unknown";
+            if (DrinkDetails.StrAlcoholic.ToLower().Contains("non")) return "Non-alcoholic";
+            if (DrinkDetails.StrAlcoholic.ToLower().Contains("alcoholic")) return "Alcoholic";
+            return "Unknown";
         }
     }
 

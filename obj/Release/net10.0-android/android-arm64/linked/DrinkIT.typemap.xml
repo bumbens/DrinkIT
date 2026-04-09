@@ -1,0 +1,8 @@
+<api type="release" assembly-name="DrinkIT" mvid="26961b6dbaad444bb1f0a7a836f5b239">
+  <module assembly-name="DrinkIT" mvid="26961b6dbaad444bb1f0a7a836f5b239" mvid-bytes="bRuWJq26S0Sx8KeoNvWyOQ==">
+    <types-scratch>
+      <entry key="crc64bf39c5b185f2e1b9/MainActivity" java-name="crc64bf39c5b185f2e1b9/MainActivity" managed-type-name="DrinkIT.MainActivity" token="33554441" />
+      <entry key="crc64bf39c5b185f2e1b9/MainApplication" java-name="crc64bf39c5b185f2e1b9/MainApplication" managed-type-name="DrinkIT.MainApplication" token="33554442" />
+    </types-scratch>
+  </module>
+</api>

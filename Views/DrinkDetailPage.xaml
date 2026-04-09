@@ -13,7 +13,11 @@
         HorizontalOptions="Center" />
 
     <VerticalStackLayout IsVisible="{Binding IsImgLoaded}">
-        <Label Padding="8" Text="{Binding DrinkDetails.StrDrink}" />
+        <Label  Padding="8" 
+                Text="{Binding DrinkDetails.StrDrink}" 
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
         
         <Grid HeightRequest="200" WidthRequest="200">
             <Image
@@ -28,7 +32,10 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center" />
         </Grid>
-
+            <Label Padding="8" Text="{Binding IsAlcoholicStatus}" 
+            VerticalOptions="End" 
+            HorizontalOptions="Center" />
+        
         <Label Padding="8" FontAttributes="Bold" Text="Ingredients:" />
         <CollectionView ItemsSource="{Binding Ingredients}">
             <CollectionView.ItemTemplate>

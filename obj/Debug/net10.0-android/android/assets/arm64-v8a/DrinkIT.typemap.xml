@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="DrinkIT" mvid="b059472d360c4bec9072b03e482707a7">
+<api type="debug" assembly-name="DrinkIT" mvid="9f1f721a2105494fb511e5e7b271fe8a">
   <java-to-managed>
     <entry java-name="crc64bf39c5b185f2e1b9/MainActivity" managed-name="DrinkIT.MainActivity, DrinkIT" managed-type-token-id="33554441" />
     <entry java-name="crc64bf39c5b185f2e1b9/MainApplication" managed-name="DrinkIT.MainApplication, DrinkIT" managed-type-token-id="33554442" />

@@ -16,7 +16,44 @@ public partial class AllDrinksPage : ContentPage
         letters.Add("Other");
         LetterPicker.ItemsSource = letters;    
     }
-
+    private async void OnShowFilterClicked(object sender, EventArgs e)
+    {
+        if (BindingContext is ListOfDrinksViewModel viewModel)
+        {
+            viewModel.IsFilterVisible = true;
+        }
+    }
+    private async void OnHideFilterClicked(object sender, EventArgs e)
+    {
+        if (BindingContext is ListOfDrinksViewModel viewModel)
+        {
+            viewModel.IsFilterVisible = false;
+        }
+    }
+    private async void OnAllClicked(object sender, EventArgs e)
+    {
+        if (BindingContext is ListOfDrinksViewModel viewModel)
+        {
+            viewModel.AlcoholicStatusFilter = "All";
+            viewModel.ApplyAlcoholicFilter();
+        }
+    }
+    private async void OnFilterAlcoholicClicked(object sender, EventArgs e)
+    {
+        if (BindingContext is ListOfDrinksViewModel viewModel)
+        {
+            viewModel.AlcoholicStatusFilter = "Alcoholic";
+            viewModel.ApplyAlcoholicFilter();
+        }
+    }
+    private async void OnFilterNonAlcoholicClicked(object sender, EventArgs e)
+    {
+        if (BindingContext is ListOfDrinksViewModel viewModel)
+        {
+            viewModel.AlcoholicStatusFilter = "Non-alcoholic";
+            viewModel.ApplyAlcoholicFilter();
+        }
+    }
     protected override async void OnAppearing()
     {
         base.OnAppearing();

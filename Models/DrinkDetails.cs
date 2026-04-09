@@ -5,6 +5,7 @@ public class DrinkDetails
     public string? StrDrink { get; set; }
     public string? StrDrinkThumb { get; set; }
     public string? IdDrink { get; set; }
+    public string? StrAlcoholic { get; set; }
     public string? StrInstructions { get; set; }
     public string? StrIngredient1 { get; set; }
     public string? StrIngredient2 { get; set; }

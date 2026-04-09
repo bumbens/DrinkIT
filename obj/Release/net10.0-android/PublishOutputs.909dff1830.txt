@@ -1,0 +1,4 @@
+/Users/filipbeben/Projects/DrinkIT/bin/Release/net10.0-android/publish/com.companyname.drinkit-Signed.aab
+/Users/filipbeben/Projects/DrinkIT/bin/Release/net10.0-android/publish/com.companyname.drinkit.aab
+/Users/filipbeben/Projects/DrinkIT/bin/Release/net10.0-android/publish/com.companyname.drinkit-Signed.apk
+/Users/filipbeben/Projects/DrinkIT/bin/Release/net10.0-android/publish/_Microsoft.Android.Resource.Designer.dll

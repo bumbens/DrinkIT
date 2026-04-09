@@ -9,12 +9,17 @@
         <RowDefinition Height="Auto" />
         <RowDefinition Height="*" />
     </Grid.RowDefinitions>
-    
-    <Picker Grid.Row="0"
-            x:Name="LetterPicker"
-            Title="Select letter"
-            SelectedIndexChanged="OnLetterSelected" />
-            
+
+    <VerticalStackLayout Grid.Row="0" Spacing="8">
+        <Button Text="Show filters"
+                Clicked="OnShowFilterClicked"
+                BackgroundColor="#1E3A5F"
+                TextColor="White" />
+        <Picker x:Name="LetterPicker"
+                Title="Select letter"
+                SelectedIndexChanged="OnLetterSelected" />
+    </VerticalStackLayout>
+
     <CollectionView Grid.Row="1"
         ItemsSource="{Binding AllDrinks}"
         SelectionChanged="OnDrinkSelected"
@@ -25,5 +30,34 @@
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
-</Grid>
+
+    <!-- Filter overlay -->
+    <Grid Grid.RowSpan="2"
+          IsVisible="{Binding IsFilterVisible}"
+          BackgroundColor="#80000000">
+        <VerticalStackLayout
+            BackgroundColor="White"
+            Padding="16"
+            VerticalOptions="Center"
+            Margin="32">
+            <Label Text="Filter by alcohol" FontAttributes="Bold" />
+            <Button Text="All" 
+                    Clicked="OnAllClicked" 
+                    Margin="0,8,0,0"
+                    BackgroundColor = "#1E3A5F"/>
+            <Button Text="Alcoholic" 
+                    Clicked="OnFilterAlcoholicClicked"
+                    Margin="0,8,0,0" 
+                    BackgroundColor = "#1E3A5F"/>
+            <Button Text="Non-alcoholic" 
+                    Margin="0,8,0,0"
+                    Clicked="OnFilterNonAlcoholicClicked"
+                    BackgroundColor = "#1E3A5F"/>
+            <Button Text="Close" 
+                    Clicked="OnHideFilterClicked" 
+                    Margin="0,8,0,0"
+                    BackgroundColor = "#1E3A5F"/>
+        </VerticalStackLayout>
+    </Grid>
+  </Grid>
 </ContentPage>
